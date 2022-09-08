@@ -11,7 +11,7 @@ export default function Statistics(props) {
       <ul className="stat-list">
         {stats.map(el => {
           return (
-            <li li className="item" key={el.id}>
+            <li className="item" key={el.id}>
               <span className="label">{el.label}</span>
               <span className="percentage">{el.percentage}%</span>
             </li>
@@ -26,7 +26,7 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
   }).isRequired,)
