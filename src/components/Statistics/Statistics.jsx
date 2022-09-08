@@ -1,8 +1,7 @@
 // import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-export default function Statistics(props) {
-  const { title, stats } = props;
+export default function Statistics({ title, stats }) {
 
   return (
     <section className="statistics">
