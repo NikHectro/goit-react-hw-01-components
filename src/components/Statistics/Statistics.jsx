@@ -5,15 +5,15 @@ import css from './Statistics.module.css'
 export default function Statistics({ title, stats }) {
 
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {stats.map(el => {
           return (
-            <li className="item" key={el.id}>
-              <span className="label">{el.label}</span>
-              <span className="percentage">{el.percentage}%</span>
+            <li className={css.item} key={el.id}>
+              <span className={css.label}>{el.label}</span>
+              <span className={css.percentage}>{el.percentage}%</span>
             </li>
           );
         })}
